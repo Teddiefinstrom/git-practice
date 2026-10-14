@@ -65,6 +65,7 @@ function keyDown(event) {
 // Runs every time a key comes up.
 function keyUp(event) {
   console.log("Key up:", event.key);
+  console.log("Key has changed up");
 
   // Example: replace this with your own instrument.
   if (event.key === exampleKey) {
