@@ -22,7 +22,7 @@
 // Settings variables should contain all of the "fixed" parts of your programs
 // For example: which key does what, which notes you can play, the tempo.
 const exampleKey = "s"; // the key that plays the example note
-const exampleNote = "C4"; // the note it plays
+const exampleNote = "E4"; // the note it plays
 
 // ---------- State ----------
 // State variables are the parts of your program that change over time.
@@ -65,6 +65,7 @@ function keyDown(event) {
 // Runs every time a key comes up.
 function keyUp(event) {
   console.log("Key up:", event.key);
+  console.log("Key has changed up");
 
   // Example: replace this with your own instrument.
   if (event.key === exampleKey) {
